@@ -1,4 +1,4 @@
-# Vision-Language Model from Scratch: PyTorch Implementation
+# Vision Language Model from Scratch: PyTorch Implementation
 
 A from scratch PyTorch implementation of a Vision Language Model (PaliGemma-style). No high-level VLM libraries.
 

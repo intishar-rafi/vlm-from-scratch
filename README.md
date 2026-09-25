@@ -35,7 +35,7 @@ Text prompt → [Gemma Tokenizer] → text embeddings
                           Generated text output
 ```
 
-## Detailed Pipeline
+## Pipeline
 
 ```
 INPUT IMAGE (e.g. 224x224x3)
@@ -193,13 +193,13 @@ python inference.py \
 
 ## Key Concepts Implemented
 
-| Concept | Where |
-|---|---|
-| Contrastive vision-language pretraining (CLIP to SigLIP sigmoid loss) | `modeling_siglip.py` |
-| Patch embeddings via strided convolution | `modeling_siglip.py` |
-| Multi-head vs. grouped-query attention | `modeling_gemma.py` |
-| Rotary positional embeddings (RoPE) | `modeling_gemma.py` |
-| RMSNorm vs. LayerNorm | `modeling_gemma.py` |
-| KV cache (prefill and decode) | `modeling_gemma.py` |
-| Image/text token fusion | `modeling_gemma.py` (`PaliGemmaForConditionalGeneration`) |
-| Top-p / temperature sampling | `inference.py` |
+| Concept                                                               | Where                                                     |
+| --------------------------------------------------------------------- | --------------------------------------------------------- |
+| Contrastive vision-language pretraining (CLIP to SigLIP sigmoid loss) | `modeling_siglip.py`                                      |
+| Patch embeddings via strided convolution                              | `modeling_siglip.py`                                      |
+| Multi-head vs. grouped-query attention                                | `modeling_gemma.py`                                       |
+| Rotary positional embeddings (RoPE)                                   | `modeling_gemma.py`                                       |
+| RMSNorm vs. LayerNorm                                                 | `modeling_gemma.py`                                       |
+| KV cache (prefill and decode)                                         | `modeling_gemma.py`                                       |
+| Image/text token fusion                                               | `modeling_gemma.py` (`PaliGemmaForConditionalGeneration`) |
+| Top-p / temperature sampling                                          | `inference.py`                                            |

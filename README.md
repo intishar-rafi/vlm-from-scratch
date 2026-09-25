@@ -1,6 +1,6 @@
 # Vision-Language Model from Scratch: PyTorch Implementation
 
-A from-scratch PyTorch implementation of a Vision-Language Model (PaliGemma-style). No high-level VLM libraries, no black boxes.
+A from scratch PyTorch implementation of a Vision Language Model (PaliGemma-style). No high-level VLM libraries.
 
 This project re-implements every core component of the architecture by hand: a contrastive vision encoder (SigLIP), a decoder-only language model (Gemma) with grouped-query attention and rotary positional embeddings, the image-text fusion pipeline, and a KV-cached inference loop for efficient autoregressive generation.
 
